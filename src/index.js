@@ -1,5 +1,7 @@
 import _ from 'lodash';
 import myName from './myName.js';
+import './style.css';
+import ravePlato from './ravePBSPlato.png';
 
 
 function component() {
@@ -13,7 +15,13 @@ function component() {
 
   // element.innerHTML = _.join(['Hello', 'webpack'], ' ');
 
-    element.textContent = myName('Josh');
+  element.textContent = myName('Josh');
+  element.classList.add('hello');
+
+  const myImage = new Image(300,300);
+  myImage.src = ravePlato;
+
+  element.appendChild(myImage);
 
   return element;
 }

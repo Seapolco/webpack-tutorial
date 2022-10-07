@@ -1,0 +1,15 @@
+
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./Roboto/Roboto-Black.ttf') format('tff'),
+    url('./Roboto/Roboto-Black.ttf') format('tff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+.hello {
+    color:red;
+    font-family: 'Roboto';
+    /* background: url('./ravePBSPlato.png'); */
+}
