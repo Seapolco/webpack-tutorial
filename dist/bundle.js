@@ -53,6 +53,16 @@ eval("\n\nmodule.exports = function (i) {\n  return i[1];\n};\n\n//# sourceURL=w
 
 /***/ }),
 
+/***/ "./src/data.csv":
+/*!**********************!*\
+  !*** ./src/data.csv ***!
+  \**********************/
+/***/ ((module) => {
+
+eval("module.exports = [[\"to\",\"from\",\"heading\",\"body\"],[\"Mary\",\"John\",\"Reminder\",\"Call Cindy on Tuesday\"],[\"Zoe\",\" Bill\",\" Reminder\",\" Buy orange juice\"],[\"Autumn\",\" Lindsey\",\" Letter\",\" I miss you\"]]\n\n//# sourceURL=webpack://webpack-demo/./src/data.csv?");
+
+/***/ }),
+
 /***/ "./node_modules/lodash/lodash.js":
 /*!***************************************!*\
   !*** ./node_modules/lodash/lodash.js ***!
@@ -140,6 +150,16 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/data.xml":
+/*!**********************!*\
+  !*** ./src/data.xml ***!
+  \**********************/
+/***/ ((module) => {
+
+eval("module.exports = {\"note\":{\"to\":[\"Mary\"],\"from\":[\"John\"],\"heading\":[\"Reminder\"],\"body\":[\"Call to Cindy on Tuesday\"]}}\n\n//# sourceURL=webpack://webpack-demo/./src/data.xml?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -147,7 +167,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _myName_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./myName.js */ \"./src/myName.js\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _ravePBSPlato_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ravePBSPlato.png */ \"./src/ravePBSPlato.png\");\n\n\n\n\n\n\nfunction component() {\n\n  const element = document.createElement('div');\n\n  // XXXXX Lodash, currently included via a script, is required for \n  //   this line to work XXXXX\n\n  //Lodash is now included in this script via 'import';\n\n  // element.innerHTML = _.join(['Hello', 'webpack'], ' ');\n\n  element.textContent = (0,_myName_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])('Josh');\n  element.classList.add('hello');\n\n  const myImage = new Image(300,300);\n  myImage.src = _ravePBSPlato_png__WEBPACK_IMPORTED_MODULE_3__;\n\n  element.appendChild(myImage);\n\n  return element;\n}\n\ndocument.body.appendChild(component());\n\n\n//# sourceURL=webpack://webpack-demo/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _myName_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./myName.js */ \"./src/myName.js\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _ravePBSPlato_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ravePBSPlato.png */ \"./src/ravePBSPlato.png\");\n/* harmony import */ var _data_xml__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./data.xml */ \"./src/data.xml\");\n/* harmony import */ var _data_xml__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_data_xml__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _data_csv__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./data.csv */ \"./src/data.csv\");\n/* harmony import */ var _data_csv__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_data_csv__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _data_toml__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./data.toml */ \"./src/data.toml\");\n/* harmony import */ var _data_yaml__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./data.yaml */ \"./src/data.yaml\");\n/* harmony import */ var _data_json5__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./data.json5 */ \"./src/data.json5\");\n\n\n\n\n\n\n\n\n\n\nconsole.log(_data_toml__WEBPACK_IMPORTED_MODULE_6__.title); // output `TOML Example`\nconsole.log(_data_toml__WEBPACK_IMPORTED_MODULE_6__.owner.name); // output `Tom Preston-Werner`\n\nconsole.log(_data_yaml__WEBPACK_IMPORTED_MODULE_7__.title); // output `YAML Example`\nconsole.log(_data_yaml__WEBPACK_IMPORTED_MODULE_7__.owner.name); // output `Tom Preston-Werner`\n\nconsole.log(_data_json5__WEBPACK_IMPORTED_MODULE_8__.title); // output `JSON5 Example`\nconsole.log(_data_json5__WEBPACK_IMPORTED_MODULE_8__.owner.name); // output `Tom Preston-Werner`\n\n\nfunction component() {\n\n  const element = document.createElement('div');\n\n  // XXXXX Lodash, currently included via a script, is required for \n  //   this line to work XXXXX\n\n  //Lodash is now included in this script via 'import';\n\n  // element.innerHTML = _.join(['Hello', 'webpack'], ' ');\n\n  element.textContent = (0,_myName_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])('Josh');\n  element.classList.add('hello');\n\n  const myImage = new Image(300,300);\n  myImage.src = _ravePBSPlato_png__WEBPACK_IMPORTED_MODULE_3__;\n\n  element.appendChild(myImage);\n\n  console.log((_data_xml__WEBPACK_IMPORTED_MODULE_4___default()));\n  console.log((_data_csv__WEBPACK_IMPORTED_MODULE_5___default()));\n\n  return element;\n \n}\n\ndocument.body.appendChild(component());\n\n\n//# sourceURL=webpack://webpack-demo/./src/index.js?");
 
 /***/ }),
 
@@ -181,6 +201,39 @@ eval("module.exports = __webpack_require__.p + \"cf56c1b149d0a5e8d7c6.ttf\";\n\n
 
 "use strict";
 eval("module.exports = __webpack_require__.p + \"dfed552cc72cbb15e4d6.png\";\n\n//# sourceURL=webpack://webpack-demo/./src/ravePBSPlato.png?");
+
+/***/ }),
+
+/***/ "./src/data.json5":
+/*!************************!*\
+  !*** ./src/data.json5 ***!
+  \************************/
+/***/ ((module) => {
+
+"use strict";
+eval("module.exports = JSON.parse('{\"title\":\"JSON5 Example\",\"owner\":{\"name\":\"Tom Preston-Werner\",\"organization\":\"GitHub\",\"bio\":\"GitHub Cofounder & CEO\\\\nLikes tater tots and beer.\",\"dob\":\"1979-05-27T07:32:00.000Z\"}}');\n\n//# sourceURL=webpack://webpack-demo/./src/data.json5?");
+
+/***/ }),
+
+/***/ "./src/data.toml":
+/*!***********************!*\
+  !*** ./src/data.toml ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+eval("module.exports = JSON.parse('{\"title\":\"TOML Example\",\"owner\":{\"name\":\"Tom Preston-Werner\",\"organization\":\"GitHub\",\"bio\":\"GitHub Cofounder & CEO\\\\nLikes tater tots and beer.\",\"dob\":\"1979-05-27T07:32:00.000Z\"}}');\n\n//# sourceURL=webpack://webpack-demo/./src/data.toml?");
+
+/***/ }),
+
+/***/ "./src/data.yaml":
+/*!***********************!*\
+  !*** ./src/data.yaml ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+eval("module.exports = JSON.parse('{\"title\":\"YAML Example\",\"owner\":{\"name\":\"Tom Preston-Werner\",\"organization\":\"GitHub\",\"bio\":\"GitHub Cofounder & CEO\\\\nLikes tater tots and beer.\",\"dob\":\"1979-05-27T07:32:00.000Z\"}}');\n\n//# sourceURL=webpack://webpack-demo/./src/data.yaml?");
 
 /***/ })
 
